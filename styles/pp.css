@@ -1,0 +1,61 @@
+main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+#paypal-container{
+    display: grid;
+
+    width: 100%;
+    padding: 10px;
+
+    background: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.700);
+}
+
+#smart-button-container > div{
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: row;
+    row-gap: 10px;
+}
+#smart-button-container > div > label{
+    color: rgb(44, 44, 44);
+    margin-top: 10px;
+}
+#smart-button-container > div > input{
+    color: rgb(44, 44, 44);
+}
+#invoiceidDiv{
+    text-align:center;
+    visibility: hidden;
+    display: none;
+}
+
+#descriptionError{
+    visibility: hidden;
+    color:rgb(255, 82, 82);
+    text-align: center;
+    margin: 8pt;
+    font-size: 8pt;
+    display: none;
+}
+#priceLabelError{
+    visibility: hidden;
+    color:rgb(255, 82, 82);
+    text-align: center;
+    margin: 8pt;
+    font-size: 8pt;
+    display: none;
+}
+#invoiceidError{
+    visibility: hidden;
+    color:rgb(255, 82, 82);
+    text-align: center;
+    display: none;
+    font-size: 8pt;
+}

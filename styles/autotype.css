@@ -1,0 +1,23 @@
+main{
+  display: grid;
+  grid-auto-flow: row;
+  align-items: center;
+}
+
+#autotype{
+  width: 100%;
+  font-size: 6vw;
+  margin-top: 45vh;
+  text-align: center;
+}
+
+/* Animação do cursor */
+.blinking-cursor{
+  animation: blink 1s steps(2, start) infinite
+}
+@keyframes blink{
+  to{
+    visibility: hidden
+  }
+}
+

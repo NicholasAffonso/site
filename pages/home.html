@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pp.css">
+</head>
+<body>
+    <main>
+
+        <div id="paypal-container">
+
+            <div id="smart-button-container">
+                <div>
+                    <label for="description">Descrição </label>
+                    <input type="text" name="descriptionInput" id="description" maxlength="127" value="">
+                </div>
+
+                <p id="descriptionError">É necessário identificar <br/>o pagamento</p>
+
+                <div>
+                    <label for="amount">Valor </label>
+                    <input name="amountInput" type="number" id="amount" value="">
+                </div>
+
+                <p id="priceLabelError">Informe um valor</p>
+
+                <div id="invoiceidDiv"><label for="invoiceid"></label>
+                    <input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="">
+                </div>
+
+                <p id="invoiceidError">Please enter an Invoice ID</p>
+                
+                <div id="paypal-button-container"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- SCRIPTS -->
+
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=BRL" data-sdk-integration-source="button-factory"></script>
+          
+    <script src="../scripts/pp.js"></script>
+</body>
+</html>
