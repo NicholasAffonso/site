@@ -5,5 +5,5 @@ document.onscroll = function(){
     goHome()
 };
 function goHome() {
-    window.location.replace("https://nicholasaffonso.github.io/site/pages/home.html");
+    window.location.href = "https://nicholasaffonso.github.io/site/pages/home.html";
 }
